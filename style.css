@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url("/imagens/maior.png");
+    background-image: url("imagens/maior.png");
     background-repeat: repeat;
     background-size: cover;
     background-position: 1% 1%;
@@ -173,7 +173,7 @@ body {
 @media screen and (max-width: 768px){
 
     body {
-        background-image: url("/imagens/menor.png");
+        background-image: url("imagens/menor.png");
     }
 
     .principal {
