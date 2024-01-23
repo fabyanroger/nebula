@@ -1,0 +1,251 @@
+:root {
+    --branco-principal: #ffffff;
+    --cinza-segundario: #c0c0c0;
+    --botao-azul: #0057c1;
+    --background: #00030c;
+    --fonte-principal: 'Inter';
+    --botao-assine: #006ef5;
+    --botao-assinar: #66666648;
+}
+
+body {
+    background-image: url("/imagens/maior.png");
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: 1% 1%;;
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.principal {
+    background-image: url("imagens/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__botao {
+    background-color: var(--botao-azul);
+    border-radius: 8px;
+    padding: 1em;
+    color: var(--branco-principal);
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+    transition: background-color 0.5s;
+}
+
+.botao_secundario {
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
+}
+
+.container__aviso {
+    font-size: 12px;
+    color: var(--cinza-segundario);
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.secundario {
+    align-items: center;
+    margin: 0 10em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    font-size: 48px;
+    color: var(--branco-principal);
+    margin-bottom: 0.1em;
+}
+
+.descricao__texto {
+    color: var(--cinza-segundario);
+}
+
+.secundario__botao {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.dispositivos__titulo {
+    font-size: 48px;
+    color: var(--branco-principal);
+}
+
+.dispositivos__lista h3 {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.lista__item {
+    font-size: 32px;
+    color: var(--branco-principal);
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin-top: 1em;
+    
+}
+
+.lista__link {
+    margin: 0 10px;
+}
+
+.lista__link a {
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+    transition: color 0.5s;
+}
+
+.rodape__texto {
+    margin: 1em 0;
+    color: var(--cinza-segundario);
+    font-size: 14px;
+}
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.lista__link a:hover {
+    color: var(--cinza-segundario);
+}
+
+.container__botao:hover {
+    background-color: var(--botao-assine);
+}
+
+.botao_secundario:hover {
+    background-color: var(--botao-assinar);
+}
+
+@media screen and (max-width: 768px){
+
+    body {
+        background-image: url("/imagens/menor.png");
+    }
+
+    .principal {
+        background-image: url("imagens/background2.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        align-items: center;
+        text-align: center;
+        padding-top: 20em;
+    }
+
+    .container {
+        height: 73vh;
+        display: block;
+    }
+
+    .container__titulo {
+        font-size: 33px;
+    }
+    .container__imagem {
+        width: 50vw;
+        margin: 2em 0 2em 0;
+    }
+
+    .container__caixa {
+        margin: 2em 2em;
+    }
+
+    .descricao__titulo {
+        font-size: 26px;
+    }
+
+    .secundario {
+        margin: 0;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .secundario__imagem {
+        width: 50vw;
+        margin: 1em 0;
+    }
+
+    .dispositivos__lista {
+        display: block;
+    }
+
+    .rodape {
+        margin: 1em 2.5em;
+    }
+
+    .rodape__logo {
+        margin-bottom: 2em;
+    }
+
+    .rodape__lista {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 0;
+        list-style: none;
+        gap: 3px;
+    }
+    
+    .lista__link {
+        margin: 0 10px;
+        text-align: center;
+    }
+
+    .lista__link a {
+        margin-left: 0;
+    }
+}
