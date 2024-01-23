@@ -77,6 +77,10 @@ body {
     width: 80%;
 }
 
+.video {
+    width: 90%;
+}
+
 .secundario {
     align-items: center;
     margin: 0 10em;
